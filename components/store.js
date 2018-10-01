@@ -30,6 +30,6 @@ const addBook = () => {
     addToCart.addEventListener('click', () => {
         bookInfoStringBuilder();
     })
-};
+};//????
 
 export {bookInfo, addBook, bookInfoStringBuilder}
