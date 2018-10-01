@@ -1,6 +1,10 @@
-import {addBook, bookInfo, bookInfoStringBuilder} from './store.js'
+import {printToDom} from '../helpers/util.js'
+import {getBook} from './store.js'
 
-getBookForCart = () => {
-    
-}
+const getStuff = {
+    getBook()
+};
+printToDom(getStuff, 'cart');
 
+
+export {getStuff}
