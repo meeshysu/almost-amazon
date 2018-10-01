@@ -1,4 +1,6 @@
 import {printToDom} from '../helpers/util.js'
+import {getStuff} from './cart.js'
+
 
 
 
@@ -22,14 +24,19 @@ const bookInfoStringBuilder = () => {
         newString += `</div>`;
         printToDom(newString, 'bookInfoSpace');
     };
-  
 
+
+
+const getBook = () => {
+    return bookInfo;
+};
 
 
 const addBook = () => {
     addToCart.addEventListener('click', () => {
-        bookInfoStringBuilder();
+        getStuff();
+        console.log('click');
     })
-};//????
+};
 
-export {bookInfo, addBook, bookInfoStringBuilder}
+export {getBook, addBook, bookInfoStringBuilder}
