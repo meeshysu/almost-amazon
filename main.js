@@ -1,4 +1,12 @@
-import {attachEvents} from './components/cart.js'
+import {addBook, bookInfoStringBuilder} from './components/store.js'
 
 
-attachEvents();
+const initializeApp = () => {
+    addBook();
+    bookInfoStringBuilder();
+}
+initializeApp();
+
+
+
+
