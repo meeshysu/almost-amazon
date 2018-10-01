@@ -1,28 +1,33 @@
 import {printToDom} from '../helpers/util.js'
-import {attachEvents} from './cart.js'
 
+
+
+const addToCart = document.getElementById('cart');
 
 const bookInfo = {
     photo: "",
     name: "Counter-Strike: Standing On Your Mate's Head",
-    description: "The story behind the famous computer game Counter-Strike and how the idea to use your partner as a ladder to see your opponent was discovered.",
-    author: "Alex 'Mangos' Kallman", 
+    price: "20.99"
 };
 
 
 const bookInfoStringBuilder = () => {
         let newString = '';
-    for (let i = 0; i < bookInfo.length; i++) {
         newString += `<div class="card w-25">`;
-        newString +=    `<h2>${bookInfo[i].name}</h2>`;
-        newString +=    `<h4>${bookInfo[i].description}</h4>`;
-        newString +=    `<p>${bookInfo[i].author}</p>`
+        newString +=    `<h2>${bookInfo.photo}</h2>`;
+        newString +=    `<h4>${bookInfo.name}</h4>`;
+        newString +=    `<p>${bookInfo.price}</p>`
         newString += `</div>`;
-    }
-    printToDom(newString, 'bookInfoSpace');
-    }
+        printToDom(newString, 'bookInfoSpace');
+    };
+  
 
 
-export {bookInfoStringBuilder}
 
+const addBook = () => {
+    addToCart.addEventListener('click', () => {
+        bookInfoStringBuilder();
+    })
+};
 
+export {bookInfo, addBook, bookInfoStringBuilder}
