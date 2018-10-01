@@ -1,5 +1,6 @@
-// import {bookInfoStringBuilder, addBook} from './store.js'
+import {addBook, bookInfo, bookInfoStringBuilder} from './store.js'
 
+getBookForCart = () => {
+    
+}
 
-
-// export {attachEvents}
