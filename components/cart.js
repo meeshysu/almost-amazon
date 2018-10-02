@@ -1,10 +1,10 @@
-import {printToDom} from '../helpers/util.js'
-import {getBook} from './store.js'
+import {getBookPrice} from './store.js'
 
-const getStuff = {
-    getBook()
-};
-printToDom(getStuff, 'cart');
+const bookDisplay = () => {
+    let domString = `<p>${getBookPrice()}</p>`;
+    return domString;
+}
 
 
-export {getStuff}
+
+export {bookDisplay}
