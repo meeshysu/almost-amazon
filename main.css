@@ -13,3 +13,8 @@ img {
     margin: 15px ;
     padding: auto;
 }
+
+#cart > img {
+    width: 100px;
+    height: auto;
+}
