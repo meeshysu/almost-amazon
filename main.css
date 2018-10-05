@@ -1,5 +1,6 @@
 body {
-    background-color: yellowgreen;
+    background-image: url(BackgroundImage.png);
+    background-size: cover;
 }
 
 img {
@@ -10,11 +11,16 @@ img {
 #title {
     font-family: 'Fjalla One', sans-serif;
     text-align: center;
-    margin: 15px ;
+    margin: 5%;
     padding: auto;
+    font-size: 300%;
 }
 
-#cart > img {
-    width: 100px;
+.cartImage {
+    width: 180px;
     height: auto;
+}
+
+.btn {
+    margin-bottom: 15%;
 }
