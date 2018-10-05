@@ -8,6 +8,7 @@ const bookInfo = {
     photo: "Boosting.png",
     name: "Counter-Strike: The Art of Boosting",
     author: "by Alex 'Mangos' Kallman",
+    price: "$20.99",
 };
 
 
@@ -27,7 +28,7 @@ const getBookPrice = () => {
 };
 
 const addBook = () => {
-    addToCart.addEventListener('click', (e) => {
+    addToCart.addEventListener('click', () => {
         printToDom(bookDisplay(), 'cart');
     })
 };
