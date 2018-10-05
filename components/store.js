@@ -1,7 +1,7 @@
 import {printToDom} from '../helpers/util.js'
 import {bookDisplay} from './cart.js'
 
-const addToCart = document.getElementById('cart');
+const addToCart = document.getElementById('addButton');
 
 
 const bookInfo = {

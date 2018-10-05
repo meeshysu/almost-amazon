@@ -6,5 +6,4 @@ const bookDisplay = () => {
     return domString;
 }
 
-
 export {bookDisplay};
