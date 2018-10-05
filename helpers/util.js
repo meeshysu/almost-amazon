@@ -4,4 +4,4 @@ const printToDom = (stringToPrint, divId) => {
     selectedDiv.innerHTML = stringToPrint;
 };
 
-export {printToDom}
+export {printToDom};

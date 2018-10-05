@@ -1,13 +1,14 @@
-import {printToDom} from './helpers/util.js'
+import {printToDom} from '../helpers/util.js'
 import {bookDisplay} from './cart.js'
 
-const addToCart = document.getElementById('cart');
+const addToCart = document.getElementById('addButton');
 
 
 const bookInfo = {
     photo: "Boosting.png",
     name: "Counter-Strike: The Art of Boosting",
     author: "by Alex 'Mangos' Kallman",
+    price: "$20.99",
 };
 
 
@@ -26,10 +27,10 @@ const getBookPrice = () => {
     return bookInfo.price;
 };
 
-    const addBook = () => {
-        addToCart.addEventListener('click', () => {
-            printToDom(bookDisplay(), 'cart');
-        })
-    };
+const addBook = () => {
+    addToCart.addEventListener('click', () => {
+        printToDom(bookDisplay(), 'cart');
+    })
+};
 
-export {addBook, getBookPrice, bookInfoStringBuilder}
+export {bookInfo, addBook, getBookPrice, bookInfoStringBuilder}
