@@ -15,7 +15,7 @@ const bookInfo = {
 const bookInfoStringBuilder = () => {
         let newString = '';
         newString += `<div class="card w-25 p-4 m-4">`;
-        newString +=    `<img src="${bookInfo.photo}"></img>`;
+        newString +=    `<img class="cardyCard" src="${bookInfo.photo}"></img>`;
         newString +=    `<h4>${bookInfo.name}</h4>`;
         newString +=    `<p>${bookInfo.author}</p>`;
         newString +=    `<p>${bookInfo.price}</p>`
