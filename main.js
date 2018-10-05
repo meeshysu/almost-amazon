@@ -1,5 +1,5 @@
-import {bookInfoStringBuilder} from './components/store.js'
-import {addBook} from './components/cart.js'
+import {bookInfoStringBuilder, addBook} from './components/store.js'
+
 
 const initializeApp = () => {
     addBook();

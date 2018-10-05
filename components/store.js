@@ -1,4 +1,4 @@
-import {printToDom} from './helpers/util.js'
+import {printToDom} from '../helpers/util.js'
 import {bookDisplay} from './cart.js'
 
 const addToCart = document.getElementById('cart');
@@ -26,10 +26,10 @@ const getBookPrice = () => {
     return bookInfo.price;
 };
 
-    const addBook = () => {
-        addToCart.addEventListener('click', () => {
-            printToDom(bookDisplay(), 'cart');
-        })
-    };
+const addBook = () => {
+    addToCart.addEventListener('click', (e) => {
+        printToDom(bookDisplay(), 'cart');
+    })
+};
 
-export {addBook, getBookPrice, bookInfoStringBuilder}
+export {bookInfo, addBook, getBookPrice, bookInfoStringBuilder}
